@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Test - Challenge Your Memory with Our Free Online Game</title>
+    <meta name="description"
+        content="Test and improve your memory with our free online memory game. Challenge yourself through 20 levels of increasing difficulty. Perfect for brain training and cognitive enhancement.">
+    <style>
+        :root {
+            --primary-color: #2D46B9;
+            --secondary-color: #F1F5FF;
+            --accent-color: #FF6B6B;
+            --text-color: #333;
+            --light-text: #666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .hero {
+            padding: 4rem 0;
+            background: var(--secondary-color);
+            text-align: center;
+        }
+
+        .game-container {
+            margin: 2rem 0;
+            height: 800px;
+        }
+
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        section:nth-child(even) {
+            background: var(--secondary-color);
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--light-text);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .scoring-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+
+        .scoring-table th,
+        .scoring-table td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .scoring-table th {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Memory Test</h1>
+            <p>Challenge Your Memory - Train Your Brain</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Test Your Memory Capacity</h2>
+            <p>Are you ready to challenge your memory? Play our free online memory game and discover your cognitive
+                potential!</p>
+        </div>
+    </section>
+
+    <section class="game-container">
+        <div class="container">
+            <iframe src="https://memorytest.io/game.html" class="game-frame" title="Memory Test Game"></iframe>
+        </div>
+    </section>
+
+    <section id="how-to-play">
+        <div class="container">
+            <h2>How to Play</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Game Structure</h3>
+                    <p>The game consists of 20 progressive levels, each presenting a unique memory challenge.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Level Progression</h3>
+                    <p>Start with single digits and advance to 20-digit numbers as you progress through the levels.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Time Limit</h3>
+                    <p>You have 5 seconds to memorize each number before it disappears.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scoring-system">
+        <div class="container">
+            <h2>Scoring System</h2>
+            <p>Each level offers increasing points based on difficulty:</p>
+            <table class="scoring-table">
+                <tr>
+                    <th>Level</th>
+                    <th>Points</th>
+                    <th>Digits</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>5 points</td>
+                    <td>1 digit</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>50 points</td>
+                    <td>10 digits</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>100 points</td>
+                    <td>20 digits</td>
+                </tr>
+            </table>
+            <p>Maximum possible score: 1050 points</p>
+            <p>Score above 840 points (80%) to achieve excellence!</p>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <div class="container">
+            <h2>Benefits of Memory Training</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Cognitive Enhancement</h3>
+                    <p>Improve your working memory and mental agility through regular practice.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Better Focus</h3>
+                    <p>Enhance your concentration and attention span.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Brain Health</h3>
+                    <p>Keep your mind sharp and potentially reduce cognitive decline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips">
+        <div class="container">
+            <h2>Tips for Success</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Practice Regularly</h3>
+                    <p>Make memory training a daily habit for best results.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Stay Focused</h3>
+                    <p>Eliminate distractions during your memory training sessions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Challenge Yourself</h3>
+                    <p>Push your limits by aiming for higher scores each time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MemoryTest.io - Free Online Memory Training Game</p>
+        </div>
+    </footer>
+</body>
+
+</html>
